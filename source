@@ -138,7 +138,7 @@ MainSection:NewButton("Kill ur self", "do i need to explain this one?", function
 end)
 
 
-Section:NewButton("Spin script", "works for other games too", function()
+MainSection:NewButton("Spin script", "works for other games too", function()
 
 power = 1400 -- change this to make it more or less powerful
 
