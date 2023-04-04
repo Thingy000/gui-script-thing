@@ -154,3 +154,46 @@ bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
 bambam.Force = Vector3.new(power,0,power)
 bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 end)
+
+
+local Mode = Window:NewTab("Gamemode")
+local ModeSection = Mode:NewSection("Gamemodes")
+
+
+ModeSection:NewButton("ALL THE GAMEMODES", "Try on april fools", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/HardcoreScriptDOORS/main/HardcoreModeScript'))()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/BirthdayModeDOORS/main/BirthdayModeScript'))()
+
+  while task.wait() do
+   game:GetService("ReplicatedStorage").EntityInfo.CamLock:FireServer() 
+end
+
+loadstring(game:HttpGet("https://github.com/HollowedOutMods/MayhemMode/blob/main/loader.lua?raw=true"))()
+end)
+
+ModeSection:NewButton("Hardcore", "Its hard", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/HardcoreScriptDOORS/main/HardcoreModeScript'))()
+end)
+
+
+ModeSection:NewButton("Birthday mode", "dont be fooled", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/BirthdayModeDOORS/main/BirthdayModeScript'))()
+end)
+
+
+ModeSection:NewButton("No hiding", "...", function()
+    while task.wait() do
+   game:GetService("ReplicatedStorage").EntityInfo.CamLock:FireServer() 
+end
+end)
+
+
+ModeSection:NewButton("Mayhem mode", "I havent tested it sooo..", function()
+    loadstring(game:HttpGet("https://github.com/HollowedOutMods/MayhemMode/blob/main/loader.lua?raw=true"))()
+end)
+
+
+MainSection:NewKeybind("Hide gui", "Press right ctrl", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
