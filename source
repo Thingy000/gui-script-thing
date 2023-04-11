@@ -156,6 +156,12 @@ bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 end)
 
 
+MainSection:NewButton("MS doors", "The best script", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
+end)
+
+--tab 2 aka gamemode select
+
 local Mode = Window:NewTab("Gamemode")
 local ModeSection = Mode:NewSection("Gamemodes")
 
@@ -194,6 +200,6 @@ ModeSection:NewButton("Mayhem mode", "I havent tested it sooo..", function()
 end)
 
 
-MainSection:NewKeybind("Hide gui", "Press right ctrl", Enum.KeyCode.RightControl, function()
+ModeSection:NewKeybind("Hide gui", "Press right ctrl", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
