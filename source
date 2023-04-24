@@ -160,6 +160,11 @@ MainSection:NewButton("MS doors", "The best script", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
 end)
 
+
+MainSection:NewButton("GOD MODE", "im not kidding", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/GodModeByNerd.lua"))()
+end)
+
 --tab 2 aka gamemode select
 
 local Mode = Window:NewTab("Gamemode")
