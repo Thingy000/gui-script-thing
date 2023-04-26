@@ -165,6 +165,17 @@ MainSection:NewButton("GOD MODE", "im not kidding", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/GodModeByNerd.lua"))()
 end)
 
+
+
+MainSection:NewButton("Object size controller", "shrink or grow anything", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
+end)
+
+
+MainSection:NewButton("Magnet", "move objects", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+end)
+
 --tab 2 aka gamemode select
 
 local Mode = Window:NewTab("Gamemode")
@@ -182,6 +193,7 @@ end
 
 loadstring(game:HttpGet("https://github.com/HollowedOutMods/MayhemMode/blob/main/loader.lua?raw=true"))()
 end)
+
 
 ModeSection:NewButton("Hardcore", "Its hard", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/HardcoreScriptDOORS/main/HardcoreModeScript'))()
@@ -209,6 +221,7 @@ ModeSection:NewButton("CHICKEN MODE", "chimken has power", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Chicken%20Mod.lua", true))()
 end)
 
-Section:NewKeybind("hide gui", "hide it right control", Enum.KeyCode.RightControl, function()
+
+ModeSection:NewKeybind("hide gui", "hide it right control", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
