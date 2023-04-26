@@ -205,6 +205,10 @@ ModeSection:NewButton("Mayhem mode", "I havent tested it sooo..", function()
 end)
 
 
-ModeSection:NewKeybind("Hide gui", "Press right ctrl", Enum.KeyCode.RightControl, function()
+ModeSection:NewButton("CHICKEN MODE", "chimken has power", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Chicken%20Mod.lua", true))()
+end)
+
+Section:NewKeybind("hide gui", "hide it right control", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
